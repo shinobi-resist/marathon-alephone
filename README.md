@@ -1,3 +1,24 @@
+# Marathon Reboot: Aleph One for Apple Silicon Macs
+
+This is a fork of [Aleph One](https://github.com/Aleph-One-Marathon/alephone), kept by the Marathon Reboot project. It carries our engine changes (the `reboot` branch, rebased on Aleph One releases and sent upstream) and free, native Apple Silicon builds of **Classic Marathon 2** and **Classic Marathon Infinity** under [Releases](https://github.com/shinobi-resist/marathon-alephone/releases). Everything below the line is upstream's README, unchanged.
+
+## Install
+
+1. Download the DMG for the game you want from [Releases](https://github.com/shinobi-resist/marathon-alephone/releases), and `SHA256SUMS` if you want to check it (`shasum -a 256 -c SHA256SUMS`).
+2. Open the DMG and drag the app onto **Applications**. Needs macOS 12 or later on an Apple Silicon Mac.
+3. Open the app. Release builds are signed with a Developer ID certificate and notarised by Apple, so macOS opens them with no warning. If macOS says it "cannot verify" the app, you have a test build: open **System Settings > Privacy & Security** and click **Open Anyway**.
+4. Saves live in `~/Library/Application Support/Marathon 2/Saved Games` (or `Marathon Infinity`), preferences in `~/Library/Preferences/Marathon 2/`. Deleting the app leaves them in place.
+
+Controls, mouse feel and saving: [PLAYER_GUIDE.md](PLAYER_GUIDE.md).
+
+## Licence
+
+- Aleph One and our changes: GPL-3 ([COPYING](COPYING)). The source for each release is the tag it is built from.
+- Game data: © Bungie, distributed with Bungie's permission through the Aleph One project, for non-commercial use only. Free; never sold.
+- "Marathon" is a registered trademark of Bungie, Inc. This is a fan project, not affiliated with or endorsed by Bungie.
+
+---
+
 # Aleph One
 
 Aleph One is the open source continuation of Bungie™’s _Marathon® 2_ and _Marathon Infinity_ game engines. Aleph One plays _Marathon_, _Marathon 2_, _Marathon Infinity_, and third-party content on a variety of platforms.
